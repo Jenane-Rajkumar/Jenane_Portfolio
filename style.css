@@ -21,6 +21,17 @@
     background-clip: text; /* Standard syntax */
     color: transparent; /* Fallback color for other browsers */
 }
+.btn {
+    background: linear-gradient(90deg, #FF008C, #FF7B00); /* Gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text for Chrome/Safari */
+    -webkit-text-fill-color: transparent; /* Make text color transparent for Chrome/Safari */
+    background-clip: text; /* Standard syntax */
+    color: transparent; /* Fallback color for other browsers */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Ensure it behaves like a button */
+}
 .hero_desc {
     font-size: 2rem;
 }
