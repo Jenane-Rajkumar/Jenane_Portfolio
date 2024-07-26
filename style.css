@@ -21,6 +21,29 @@
     background-clip: text; /* Standard syntax */
     color: transparent; /* Fallback color for other browsers */
 }
+.connect-btn {
+  background: linear-gradient(45deg, #FF008C, #FF7B00);
+  background-size: 200% 200%;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
 .hero_desc {
     font-size: 2rem;
 }
