@@ -13,6 +13,11 @@
 /* text css above hero image*/
 .hero_title {
     font-size: 4.5rem;
+    background: linear-gradient(90deg, #FF008C, #FF7B00); /* Define your gradient colors */
+    -webkit-background-clip: text; /* Clip the background to the text for Chrome and Safari */
+    -webkit-text-fill-color: transparent; /* Make the text color transparent for Chrome and Safari */
+    background-clip: text; /* Standard syntax for clipping background to text */
+    color: transparent; /* Fallback color for browsers that don't support gradient text */
 }
 .hero_desc {
     font-size: 2rem;
