@@ -21,37 +21,6 @@
     background-clip: text; /* Standard syntax */
     color: transparent; /* Fallback color for other browsers */
 }
-.btn {
-    background-color: black; /* Black background for the button */
-    color: transparent; /* Make text color transparent to show gradient */
-    padding: 10px 20px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Ensure it behaves like a button */
-    position: relative; /* For positioning the gradient text */
-    overflow: hidden; /* Hide overflow to ensure proper clipping */
-    font-size: 16px; /* Adjust font size as needed */
-}
-
-.btn::before {
-    content: 'Connect'; /* Text content */
-    position: absolute; /* Position the gradient text */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for exact centering */
-    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient colors */
-    -webkit-background-clip: text; /* Clip the gradient to text for WebKit browsers */
-    background-clip: text; /* Standard syntax */
-    -webkit-text-fill-color: transparent; /* Make text color transparent */
-    color: transparent; /* Fallback for other browsers */
-    z-index: 1; /* Ensure text is above other content */
-}
-
-.btn span {
-    position: relative; /* Ensure text content sits on top of the gradient text */
-    z-index: 2; /* Place span content above the pseudo-element */
-}
-
 .hero_desc {
     font-size: 2rem;
 }
