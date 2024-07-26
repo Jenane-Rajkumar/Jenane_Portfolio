@@ -24,13 +24,22 @@
 .connect-btn {
   background: linear-gradient(45deg, #FF008C, #FF7B00);
   background-size: 200% 200%;
-  color: white;
+  color: white; /* Text color */
   padding: 10px 20px;
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
   border-radius: 5px;
   font-weight: bold;
   display: inline-block;
-  animation: gradientAnimation 3s ease infinite;
+  border: 2px solid transparent; /* Transparent border to allow gradient border */
+  background-clip: padding-box; /* Ensure background does not cover the border */
+  border-image: linear-gradient(45deg, #FF008C, #FF7B00) 1; /* Gradient border */
+  transition: color 0.3s ease, background 0.3s ease; /* Smooth transitions */
+  animation: gradientAnimation 3s ease infinite; /* Gradient animation */
+}
+
+.connect-btn:hover {
+  color: white; /* Text color on hover */
+  text-decoration: none; /* Remove underline on hover */
 }
 
 @keyframes gradientAnimation {
@@ -44,6 +53,7 @@
     background-position: 0% 0%;
   }
 }
+
 .hero_desc {
     font-size: 2rem;
 }
