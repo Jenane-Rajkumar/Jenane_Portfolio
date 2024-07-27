@@ -77,11 +77,16 @@
     text-align: center;
     width: 100%;
 }
-.card-title {
+.card-title {   
     text-align: center;
 }
-.card:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+.card.portfolioContent{
+    border: 1px solid #3f3f3f;
+}
+
+.card.portfolioContent:hover {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
