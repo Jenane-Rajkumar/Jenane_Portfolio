@@ -80,21 +80,14 @@
     cursor: pointer;
 }
 .fa-envelope:hover,.fa-instagram:hover,.fa-linkedin:hover{
-    color: #ffffff;
-}
-.fab {
     background: linear-gradient(90deg, #FF008C, #FF7B00); /* Gradient colors */
     -webkit-background-clip: text; /* Clip background to text for Chrome/Safari */
     -webkit-text-fill-color: transparent; /* Make text color transparent for Chrome/Safari */
     background-clip: text; /* Standard syntax */
-    color: transparent;
+    color: transparent; /* Fallback color for other browsers */
 }
-.fa {
-    background: linear-gradient(90deg, #FF008C, #FF7B00); /* Gradient colors */
-    -webkit-background-clip: text; /* Clip background to text for Chrome/Safari */
-    -webkit-text-fill-color: transparent; /* Make text color transparent for Chrome/Safari */
-    background-clip: text; /* Standard syntax */
-    color: transparent;
+.fab, .fa{
+        color: #ffffff;
 }
 /* footer styling */
 #footer {
