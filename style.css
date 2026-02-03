@@ -12,7 +12,7 @@
 }
 .bgimage {
     height:100vh;
-    background: url('images/bg.png');
+    background: url('images/unsplash_mJhfxhu2OQ4.png');
     background-size:cover;
     position:relative;
     animation: slideIn 10s linear infinite;
